@@ -496,25 +496,8 @@
 }
 
 .projects-footer {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
-}
-
-/* ---- ABOUT STRIP ---- */
-.about-strip {
-  background: var(--grey-100);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.about-strip-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 48px;
-  flex-wrap: wrap;
 }
 
 /* ---- RESPONSIVE ---- */

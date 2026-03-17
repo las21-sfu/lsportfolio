@@ -1,205 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kinetic Typography — Laraine Sim</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/projects.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinetic Typography — Laraine Sim</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+  </head>
+  <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
 
-  <div class="cursor-dot"></div>
-  <div class="cursor-ring"></div>
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">LS<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1U10L0qeT0MrT_OG-5EShGJ4zShYl49rG/view"
+            target="_blank"
+            class="nav-cta"
+            >Resume ↗</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-  <nav class="nav">
-    <a href="index.html" class="nav-logo">LS<span>.</span></a>
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="https://drive.google.com/file/d/1U10L0qeT0MrT_OG-5EShGJ4zShYl49rG/view" target="_blank" class="nav-cta">Resume ↗</a></li>
-    </ul>
-  </nav>
+    <main class="page">
+      <!-- ============ CASE HERO ============ -->
+      <section
+        class="case-hero"
+        style="
+          background: linear-gradient(
+            135deg,
+            var(--blue-dark) 0%,
+            var(--grey-700) 100%
+          );
+        "
+      >
+        <div class="case-hero-inner">
+          <a href="projects.html" class="case-hero-back">← All Projects</a>
 
-  <main class="page">
+          <div class="reveal">
+            <h1 class="case-hero-title">Kinetic<br /><em>Typography</em></h1>
+            <p class="case-hero-desc">
+              Motion-based typography and graphics communicating the emotion of
+              a selected audio clip — applying animation and motion-design
+              principles to create a visually engaging short video.
+            </p>
+          </div>
 
-    <!-- ============ CASE HERO ============ -->
-    <section class="case-hero" style="background: linear-gradient(135deg, var(--blue-dark) 0%, var(--grey-700) 100%);">
-      <div class="case-hero-inner">
-        <a href="projects.html" class="case-hero-back">← All Projects</a>
+          <div class="case-meta reveal">
+            <div class="case-meta-item">
+              <div class="case-meta-label">Role</div>
+              <div class="case-meta-value">Sole Contributor</div>
+            </div>
+            <div class="case-meta-item">
+              <div class="case-meta-label">Duration</div>
+              <div class="case-meta-value" style="color: var(--yellow)">
+                4 Weeks
+              </div>
+            </div>
+            <div class="case-meta-item">
+              <div class="case-meta-label">Tools</div>
+              <div class="case-meta-value">After Effects · Illustrator</div>
+            </div>
+            <div class="case-meta-item">
+              <div class="case-meta-label">Focus</div>
+              <div class="case-meta-value">Motion · Typography</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- ============ DATA CALLOUT ============ -->
+      <section
+        class="section"
+        style="background: var(--grey-100); padding: 40px 48px"
+      >
+        <div style="max-width: 900px; margin: 0 auto">
+          <div class="stat-row reveal stagger-group">
+            <div class="stat-card stagger-child">
+              <div class="stat-num">4</div>
+              <div class="stat-label">Weeks of production</div>
+            </div>
+            <div
+              class="stat-card stagger-child"
+              style="background: var(--grey-700)"
+            >
+              <div class="stat-num">1:1</div>
+              <div class="stat-label">Audio-to-frame sync ratio</div>
+            </div>
+            <div
+              class="stat-card stagger-child"
+              style="background: var(--blue-mid)"
+            >
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Course objectives met</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CASE BODY ============ -->
+      <article class="case-body">
+        <!-- 01: STARTING OUT -->
         <div class="reveal">
-          <h1 class="case-hero-title">Kinetic<br/><em>Typography</em></h1>
-          <p class="case-hero-desc">
-            Motion-based typography and graphics communicating the emotion of a selected audio clip —
-            applying animation and motion-design principles to create a visually engaging short video.
+          <span class="case-section-marker" data-num="01"
+            >Research &amp; Planning</span
+          >
+          <h2 class="case-h2">Starting Out</h2>
+        </div>
+
+        <h3 class="case-h3 reveal">Font Selection</h3>
+        <p class="case-p reveal">
+          I selected a gritty, high-impact font that matched the tone of the
+          soundtrack and maintained readability while reinforcing the overall
+          mood of the piece.
+        </p>
+
+        <div class="case-img reveal">
+          <div class="img-placeholder" style="height: 260px">
+            <!-- Replace with: <img src="images/iat100-font.png" alt="Font Selection"> -->
+            Font Selection — image placeholder
+          </div>
+        </div>
+        <p class="case-caption">Selected typeface study and rationale</p>
+
+        <h3 class="case-h3 reveal">Initial Storyboarding</h3>
+        <p class="case-p reveal">
+          My process began with a hand-drawn storyboard to map out visuals
+          frame-by-frame in sync with the audio. Each second of the video was
+          matched up to a frame of the storyboard — ensuring every beat had a
+          corresponding visual response.
+        </p>
+
+        <!-- Storyboard image grid -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 24px 0;
+          "
+          class="reveal stagger-group"
+        >
+          <!-- Replace these with actual storyboard images -->
+          <div
+            class="img-placeholder stagger-child"
+            style="height: 220px; border-radius: 8px"
+          >
+            Storyboard page 1 — image placeholder
+          </div>
+          <div
+            class="img-placeholder stagger-child"
+            style="height: 220px; border-radius: 8px"
+          >
+            Storyboard page 2 — image placeholder
+          </div>
+          <div
+            class="img-placeholder stagger-child"
+            style="height: 220px; border-radius: 8px"
+          >
+            Storyboard page 3 — image placeholder
+          </div>
+          <div
+            class="img-placeholder stagger-child"
+            style="height: 220px; border-radius: 8px"
+          >
+            Storyboard page 4 — image placeholder
+          </div>
+        </div>
+        <p class="case-caption">Hand-drawn storyboard pages, frame-by-frame</p>
+
+        <hr class="case-divider" />
+
+        <!-- 02: DESIGN -->
+        <div class="reveal">
+          <span class="case-section-marker" data-num="02">Visual Design</span>
+          <h2 class="case-h2">Designing Visual Assets</h2>
+          <h3 class="case-h3">Creation in Adobe Illustrator</h3>
+          <p class="case-p">
+            To strengthen the story, I created custom visuals that matched
+            specific lyrics to emphasize them. After finalizing the visual
+            assets, I imported them into Adobe After Effects and animated the
+            entire video, syncing movements and transitions with the audio.
+            Every lyric and graphic element was timed to match the pacing of the
+            song.
           </p>
         </div>
 
-        <div class="case-meta reveal">
-          <div class="case-meta-item">
-            <div class="case-meta-label">Role</div>
-            <div class="case-meta-value">Sole Contributor</div>
-          </div>
-          <div class="case-meta-item">
-            <div class="case-meta-label">Duration</div>
-            <div class="case-meta-value" style="color:var(--yellow);">4 Weeks</div>
-          </div>
-          <div class="case-meta-item">
-            <div class="case-meta-label">Tools</div>
-            <div class="case-meta-value">After Effects · Illustrator</div>
-          </div>
-          <div class="case-meta-item">
-            <div class="case-meta-label">Focus</div>
-            <div class="case-meta-value">Motion · Typography</div>
+        <div class="case-img reveal">
+          <div class="img-placeholder" style="height: 260px">
+            <!-- Replace with: <img src="images/iat100-illustrator.png" alt="Illustrator assets"> -->
+            Adobe Illustrator visual assets — image placeholder
           </div>
         </div>
-      </div>
-    </section>
+        <p class="case-caption">
+          Custom visual assets created in Adobe Illustrator
+        </p>
 
-    <!-- ============ DATA CALLOUT ============ -->
-    <section class="section" style="background:var(--grey-100);padding:40px 48px;">
-      <div style="max-width:900px;margin:0 auto;">
-        <div class="stat-row reveal stagger-group">
-          <div class="stat-card stagger-child">
-            <div class="stat-num">4</div>
-            <div class="stat-label">Weeks of production</div>
-          </div>
-          <div class="stat-card stagger-child" style="background:var(--grey-700)">
-            <div class="stat-num">1:1</div>
-            <div class="stat-label">Audio-to-frame sync ratio</div>
-          </div>
-          <div class="stat-card stagger-child" style="background:var(--blue-mid)">
-            <div class="stat-num">100%</div>
-            <div class="stat-label">Course objectives met</div>
-          </div>
+        <!-- Process callout -->
+        <div class="callout reveal">
+          <p>
+            <strong>Every frame was intentional</strong> — audio timing drove
+            design decisions. If the beat dropped, the type did too. Motion
+            design is storytelling at its most visceral.
+          </p>
         </div>
-      </div>
-    </section>
 
-    <!-- ============ CASE BODY ============ -->
-    <article class="case-body">
+        <hr class="case-divider" />
 
-      <!-- 01: STARTING OUT -->
-      <div class="reveal">
-        <span class="case-section-marker" data-num="01">Research &amp; Planning</span>
-        <h2 class="case-h2">Starting Out</h2>
-      </div>
-
-      <h3 class="case-h3 reveal">Font Selection</h3>
-      <p class="case-p reveal">
-        I selected a gritty, high-impact font that matched the tone of the soundtrack and maintained
-        readability while reinforcing the overall mood of the piece.
-      </p>
-
-      <div class="case-img reveal">
-        <div class="img-placeholder" style="height:260px;">
-          <!-- Replace with: <img src="images/iat100-font.png" alt="Font Selection"> -->
-          Font Selection — image placeholder
+        <!-- 03: REFLECTION -->
+        <div class="reveal">
+          <span class="case-section-marker" data-num="03">Reflection</span>
+          <h2 class="case-h2">What I Learned</h2>
         </div>
-      </div>
-      <p class="case-caption">Selected typeface study and rationale</p>
 
-      <h3 class="case-h3 reveal">Initial Storyboarding</h3>
-      <p class="case-p reveal">
-        My process began with a hand-drawn storyboard to map out visuals frame-by-frame in sync with the audio.
-        Each second of the video was matched up to a frame of the storyboard — ensuring every beat
-        had a corresponding visual response.
-      </p>
+        <ul class="reflection-list reveal">
+          <li>
+            <div>
+              <strong
+                style="
+                  font-family: var(--font-display);
+                  font-size: 14px;
+                  color: var(--blue-dark);
+                  display: block;
+                  margin-bottom: 4px;
+                "
+                >Mastery of Animation and Visual Storytelling</strong
+              >
+              The final piece successfully met all course objectives, showcasing
+              strong technical proficiency in animation techniques, timing, and
+              composition. Each sequence demonstrated a clear understanding of
+              how motion, rhythm, and design can work together to communicate
+              meaning and emotion.
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong
+                style="
+                  font-family: var(--font-display);
+                  font-size: 14px;
+                  color: var(--blue-dark);
+                  display: block;
+                  margin-bottom: 4px;
+                "
+                >Balancing Planning and Flexibility</strong
+              >
+              Throughout production, I learned that effective creative work
+              requires both structure and adaptability. Starting with a solid
+              concept provided direction, but allowing room for experimentation
+              and revision led to a more intentional and emotionally resonant
+              final result.
+            </div>
+          </li>
+        </ul>
+      </article>
 
-      <!-- Storyboard image grid -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0;" class="reveal stagger-group">
-        <!-- Replace these with actual storyboard images -->
-        <div class="img-placeholder stagger-child" style="height:220px;border-radius:8px;">Storyboard page 1 — image placeholder</div>
-        <div class="img-placeholder stagger-child" style="height:220px;border-radius:8px;">Storyboard page 2 — image placeholder</div>
-        <div class="img-placeholder stagger-child" style="height:220px;border-radius:8px;">Storyboard page 3 — image placeholder</div>
-        <div class="img-placeholder stagger-child" style="height:220px;border-radius:8px;">Storyboard page 4 — image placeholder</div>
-      </div>
-      <p class="case-caption">Hand-drawn storyboard pages, frame-by-frame</p>
+      <!-- ---- PROJECT NAV ---- -->
+      <nav class="project-nav">
+        <a href="iat235.html">← Issue Reporting Platform</a>
+        <a href="projects.html">All Projects →</a>
+      </nav>
+    </main>
 
-      <hr class="case-divider" />
-
-      <!-- 02: DESIGN -->
-      <div class="reveal">
-        <span class="case-section-marker" data-num="02">Visual Design</span>
-        <h2 class="case-h2">Designing Visual Assets</h2>
-        <h3 class="case-h3">Creation in Adobe Illustrator</h3>
-        <p class="case-p">
-          To strengthen the story, I created custom visuals that matched specific lyrics to emphasize them.
-          After finalizing the visual assets, I imported them into Adobe After Effects and animated the entire
-          video, syncing movements and transitions with the audio. Every lyric and graphic element was timed
-          to match the pacing of the song.
+    <!-- ---- FOOTER---- -->
+    <footer class="footer">
+      <div class="footer-logo-group">
+        <div class="footer-logo">LS<span>.</span></div>
+        <p class="footer-copy">
+          laraineannsim@gmail.com · © 2025 Laraine Sim. All rights reserved.
+          <br /><span class="footer-coded">coded by me! :)</span>
         </p>
       </div>
+      <div class="footer-right">
+        <nav class="footer-links">
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a
+            href="https://drive.google.com/file/d/1U10L0qeT0MrT_OG-5EShGJ4zShYl49rG/view"
+            target="_blank"
+            >Resume ↗</a
+          >
+        </nav>
+        <!-- Social icon links — update hrefs with your actual profiles -->
+        <div class="footer-socials">
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/laraine-sim"
+            target="_blank"
+            class="footer-social-link"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              ></path>
+            </svg>
+          </a>
 
-      <div class="case-img reveal">
-        <div class="img-placeholder" style="height:260px;">
-          <!-- Replace with: <img src="images/iat100-illustrator.png" alt="Illustrator assets"> -->
-          Adobe Illustrator visual assets — image placeholder
+          <!-- GitHub -->
+          <a
+            href="https://github.com/larainesim"
+            target="_blank"
+            class="footer-social-link"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              ></path>
+            </svg>
+          </a>
+
+          <!-- Email -->
+          <a
+            href="mailto:laraineannsim@gmail.com"
+            class="footer-social-link"
+            aria-label="Email"
+          >
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
-      <p class="case-caption">Custom visual assets created in Adobe Illustrator</p>
+    </footer>
 
-      <!-- Process callout -->
-      <div class="callout reveal">
-        <p>
-          <strong>Every frame was intentional</strong> — audio timing drove design decisions.
-          If the beat dropped, the type did too. Motion design is storytelling at its most visceral.
-        </p>
-      </div>
-
-      <hr class="case-divider" />
-
-      <!-- 03: REFLECTION -->
-      <div class="reveal">
-        <span class="case-section-marker" data-num="03">Reflection</span>
-        <h2 class="case-h2">What I Learned</h2>
-      </div>
-
-      <ul class="reflection-list reveal">
-        <li>
-          <div>
-            <strong style="font-family:var(--font-display);font-size:14px;color:var(--blue-dark);display:block;margin-bottom:4px;">Mastery of Animation and Visual Storytelling</strong>
-            The final piece successfully met all course objectives, showcasing strong technical proficiency
-            in animation techniques, timing, and composition. Each sequence demonstrated a clear understanding
-            of how motion, rhythm, and design can work together to communicate meaning and emotion.
-          </div>
-        </li>
-        <li>
-          <div>
-            <strong style="font-family:var(--font-display);font-size:14px;color:var(--blue-dark);display:block;margin-bottom:4px;">Balancing Planning and Flexibility</strong>
-            Throughout production, I learned that effective creative work requires both structure and adaptability.
-            Starting with a solid concept provided direction, but allowing room for experimentation and revision
-            led to a more intentional and emotionally resonant final result.
-          </div>
-        </li>
-      </ul>
-
-    </article>
-
-    <!-- ---- PROJECT NAV ---- -->
-    <nav class="project-nav">
-      <a href="iat235.html">← Issue Reporting Platform</a>
-      <a href="projects.html">All Projects →</a>
-    </nav>
-
-  </main>
-
-  <footer class="footer">
-    <div class="footer-logo">LS<span>.</span></div>
-    <nav class="footer-links">
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="https://drive.google.com/file/d/1U10L0qeT0MrT_OG-5EShGJ4zShYl49rG/view" target="_blank">Resume ↗</a>
-    </nav>
-    <p class="footer-copy">laraineannsim@gmail.com · © 2025 Laraine Sim. All rights reserved.</p>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
