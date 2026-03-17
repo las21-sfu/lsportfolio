@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Laraine Sim</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">LS<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1U10L0qeT0MrT_OG-5EShGJ4zShYl49rG/view"
+            target="_blank"
+            class="nav-cta"
+            >Resume ↗</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main class="page">
+      <!-- ---- CONTACT HERO ---- -->
+      <section class="contact-hero">
+        <div class="contact-hero-text reveal">
+          <span class="section-label">Get in Touch</span>
+          <h1 class="section-title">
+            Let's make<br /><em>something great.</em>
+          </h1>
+          <p class="contact-intro">
+            Available for freelance, internship, or collaborative projects.
+            Whether you have a full brief or just a spark of an idea — I'd love
+            to hear from you.
+          </p>
+
+          <!-- Direct email link — fast contact option -->
+          <a href="mailto:laraineannsim@gmail.com" class="contact-email-link">
+            <span class="contact-email-icon">✉</span>
+            laraineannsim@gmail.com
+            <span class="contact-email-arrow">↗</span>
+          </a>
+
+          <!-- Quick info chips -->
+          <div class="contact-meta">
+            <div class="contact-meta-item">
+              <span class="contact-meta-label">Based in</span>
+              <!-- Edit your location -->
+              <span class="contact-meta-value">Vancouver, BC</span>
+            </div>
+            <div class="contact-meta-item">
+              <span class="contact-meta-label">Status</span>
+              <span class="contact-meta-value" style="color: #22c55e"
+                >● Open to opportunities</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM — styled as a paper/envelope card -->
+        <div class="contact-form-wrap reveal">
+          <div class="contact-form-card">
+            <div class="form-card-header">
+              <span class="form-card-label">Send a message</span>
+              <!-- Decorative folder tab -->
+              <span class="form-card-tab">📬</span>
+            </div>
+
+            <!-- NOTE: For actual form submission, wire up to Formspree, Netlify Forms, or similar -->
+            <!-- Action attribute: replace YOUR_FORM_ID with your Formspree form ID -->
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+              id="contact-form"
+            >
+              <div class="form-row">
+                <!-- Edit field labels/placeholders to suit -->
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="What's this about?"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your project or idea..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">
+                Send Message →
+              </button>
+
+              <!-- Success message (shown by JS after submit) -->
+              <div class="form-success" id="form-success" style="display: none">
+                <span>✦</span> Thanks! I'll be in touch soon.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-logo">LS<span>.</span></div>
+      <nav class="footer-links">
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a
+          href="https://drive.google.com/file/d/1U10L0qeT0MrT_OG-5EShGJ4zShYl49rG/view"
+          target="_blank"
+          >Resume ↗</a
+        >
+      </nav>
+      <p class="footer-copy">
+        laraineannsim@gmail.com · © 2025 Laraine Sim. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

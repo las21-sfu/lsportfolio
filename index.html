@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laraine Sim — Designer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <!-- Custom cursor elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- ===================== NAV ===================== -->
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">LS<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1U10L0qeT0MrT_OG-5EShGJ4zShYl49rG/view"
+            target="_blank"
+            class="nav-cta"
+            >Resume ↗</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ===================== PAGE ===================== -->
+    <main class="page">
+      <!-- ---- HERO ---- -->
+      <section class="hero">
+        <!-- Animated grid background -->
+        <div class="hero-grid" aria-hidden="true"></div>
+
+        <!-- Floating label -->
+        <div class="hero-label reveal stagger-child">
+          <span class="chip">✦ Open for opportunities</span>
+        </div>
+
+        <!-- Headline -->
+        <div class="hero-text reveal stagger-child">
+          <h1 class="hero-heading">
+            <span class="line-1">From the desk of</span>
+            <span class="line-2">Laraine<em> Sim</em></span>
+          </h1>
+          <p class="hero-sub">
+            Graphic designer · UI/UX · Motion · Digital storytelling<br />
+            <span class="hero-trekkie">— and a proud Trekkie 🖖</span>
+          </p>
+        </div>
+
+        <!-- 3D FOLDER DESK SCENE -->
+        <div class="desk-scene" aria-label="Interactive file folders">
+          <div class="desk-surface"></div>
+
+          <!-- Folder: Projects -->
+          <div
+            class="folder-3d"
+            id="folder-projects"
+            data-href="projects.html"
+            tabindex="0"
+            role="button"
+            aria-label="Open Projects"
+          >
+            <div class="folder-tab">Projects</div>
+            <div class="folder-body">
+              <div class="folder-content">
+                <span class="folder-icon">📁</span>
+                <span class="folder-title">Projects</span>
+                <span class="folder-count">2 items</span>
+              </div>
+            </div>
+            <div class="folder-papers">
+              <div class="paper p1"></div>
+              <div class="paper p2"></div>
+            </div>
+          </div>
+
+          <!-- Folder: About -->
+          <div
+            class="folder-3d"
+            id="folder-about"
+            data-href="about.html"
+            tabindex="0"
+            role="button"
+            aria-label="Open About"
+          >
+            <div class="folder-tab">About Me</div>
+            <div class="folder-body">
+              <div class="folder-content">
+                <span class="folder-icon">👤</span>
+                <span class="folder-title">About</span>
+                <span class="folder-count">Bio + Skills</span>
+              </div>
+            </div>
+            <div class="folder-papers">
+              <div class="paper p1"></div>
+              <div class="paper p2"></div>
+            </div>
+          </div>
+
+          <!-- Folder: Contact -->
+          <div
+            class="folder-3d"
+            id="folder-contact"
+            data-href="contact.html"
+            tabindex="0"
+            role="button"
+            aria-label="Open Contact"
+          >
+            <div class="folder-tab">Contact</div>
+            <div class="folder-body">
+              <div class="folder-content">
+                <span class="folder-icon">✉️</span>
+                <span class="folder-title">Contact</span>
+                <span class="folder-count">Get in touch</span>
+              </div>
+            </div>
+            <div class="folder-papers">
+              <div class="paper p1"></div>
+            </div>
+          </div>
+
+          <!-- Sticky note -->
+          <div class="sticky-note reveal">
+            <span>Click a folder<br />to explore! →</span>
+          </div>
+
+          <!-- Desk item: pencil -->
+          <div class="desk-pencil" aria-hidden="true"></div>
+        </div>
+
+        <!-- Scroll hint -->
+        <div class="scroll-hint reveal">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ---- FEATURED PROJECTS ---- -->
+      <section class="section projects-preview">
+        <div class="projects-header reveal">
+          <span class="section-label">Selected Work</span>
+          <h2 class="section-title">Projects I'm <em>proud of</em></h2>
+        </div>
+
+        <div class="project-grid stagger-group">
+          <!-- Project card 1 -->
+          <a href="iat235.html" class="project-card stagger-child reveal">
+            <div class="project-card-img">
+              <!-- Replace src with actual image when available -->
+              <div class="img-placeholder" style="height: 260px">
+                Issue Reporting Platform — preview image
+              </div>
+              <div class="project-card-overlay">
+                <span class="project-card-cta">View Case Study →</span>
+              </div>
+            </div>
+            <div class="project-card-info">
+              <div class="project-card-tags">
+                <span class="tag">UX Design</span>
+                <span class="tag">Web Dev</span>
+                <span class="tag">Research</span>
+                <!-- Featured badge -->
+                <span class="chip" style="font-size: 10px; padding: 3px 8px"
+                  >✦ SIAT Showcase</span
+                >
+              </div>
+              <h3 class="project-card-title">Issue Reporting Platform</h3>
+              <p class="project-card-desc">
+                A community-driven issue platform for SIAT students — designed &
+                developed over 5 weeks.
+              </p>
+              <div class="project-card-meta">
+                <span>5 weeks · 2025</span>
+                <span class="project-card-arrow">→</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project card 2 -->
+          <a href="iat100.html" class="project-card stagger-child reveal">
+            <div class="project-card-img">
+              <div class="img-placeholder" style="height: 260px">
+                Kinetic Typography — preview image
+              </div>
+              <div class="project-card-overlay">
+                <span class="project-card-cta">View Case Study →</span>
+              </div>
+            </div>
+            <div class="project-card-info">
+              <div class="project-card-tags">
+                <span class="tag">Motion Design</span>
+                <span class="tag">After Effects</span>
+                <span class="tag">Storyboarding</span>
+              </div>
+              <h3 class="project-card-title">Kinetic Typography Video</h3>
+              <p class="project-card-desc">
+                Translating audio emotion into synchronized motion-typography
+                visuals.
+              </p>
+              <div class="project-card-meta">
+                <span>4 weeks · 2023</span>
+                <span class="project-card-arrow">→</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="projects-footer reveal">
+          <a href="projects.html" class="btn btn-outline">All Projects</a>
+        </div>
+      </section>
+
+      <!-- ---- ABOUT STRIP ---- -->
+      <section class="section about-strip reveal">
+        <div class="about-strip-inner">
+          <div class="about-strip-text">
+            <span class="section-label">Who I Am</span>
+            <h2 class="section-title" style="font-size: clamp(26px, 4vw, 44px)">
+              Designer who <em>codes.</em>
+            </h2>
+            <p
+              style="
+                color: var(--grey-700);
+                max-width: 480px;
+                margin-top: 16px;
+                line-height: 1.8;
+              "
+            >
+              I'm Laraine — specializing in motion, interaction, and digital
+              storytelling. I bridge creativity with technical implementation to
+              build experiences that feel both intentional and alive.
+            </p>
+            <a
+              href="about.html"
+              class="btn btn-primary"
+              style="margin-top: 28px"
+              >Learn More →</a
+            >
+          </div>
+          <!-- Mini stat row for visual punch -->
+          <div
+            class="stat-row"
+            style="align-self: center; flex-direction: column; min-width: 220px"
+          >
+            <!-- Edit these numbers to reflect your actual stats -->
+            <div class="stat-card">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">Projects completed</div>
+            </div>
+            <div class="stat-card" style="background: var(--blue-mid)">
+              <div class="stat-num">2</div>
+              <div class="stat-label">Years designing</div>
+            </div>
+            <div class="stat-card" style="background: var(--blue-bright)">
+              <div class="stat-num">1×</div>
+              <div class="stat-label">SIAT Showcase featured</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="footer-logo">LS<span>.</span></div>
+      <nav class="footer-links">
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a
+          href="https://drive.google.com/file/d/1U10L0qeT0MrT_OG-5EShGJ4zShYl49rG/view"
+          target="_blank"
+          >Resume ↗</a
+        >
+      </nav>
+      <p class="footer-copy">
+        laraineannsim@gmail.com · © 2025 Laraine Sim. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

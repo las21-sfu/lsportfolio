@@ -1,0 +1,221 @@
+/* ============================================================
+   CONTACT PAGE — Styles
+   ============================================================ */
+
+/* ---- HERO LAYOUT ---- */
+.contact-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  padding: 80px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - var(--nav-h));
+  align-items: center;
+}
+
+/* ---- LEFT: TEXT SIDE ---- */
+.contact-intro {
+  font-size: 17px;
+  color: var(--grey-700);
+  line-height: 1.8;
+  max-width: 480px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+.contact-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blue-dark);
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 4px;
+  transition: color .2s, border-color .2s;
+  margin-bottom: 32px;
+}
+
+.contact-email-link:hover {
+  color: var(--blue-bright);
+  border-color: var(--blue-bright);
+}
+
+.contact-email-icon {
+  font-size: 18px;
+}
+
+.contact-email-arrow {
+  font-size: 13px;
+  transition: transform .2s;
+}
+
+.contact-email-link:hover .contact-email-arrow {
+  transform: translate(2px, -2px);
+}
+
+/* Meta info row */
+.contact-meta {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.contact-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-meta-label {
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--grey-400);
+}
+
+.contact-meta-value {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--blue-dark);
+}
+
+/* ---- RIGHT: FORM CARD ---- */
+.contact-form-wrap {
+  /* Slight 3D tilt on the form card for playfulness */
+  perspective: 800px;
+}
+
+.contact-form-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+  transition: transform .3s cubic-bezier(.25,.46,.45,.94), box-shadow .3s;
+  transform: rotateY(-2deg) rotateX(1deg);
+}
+
+.contact-form-card:hover {
+  transform: rotateY(0deg) rotateX(0deg) translateY(-4px);
+  box-shadow: 0 40px 80px rgba(10,22,40,.18);
+}
+
+/* Form card header — folder-tab feel */
+.form-card-header {
+  background: var(--blue-dark);
+  padding: 16px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-card-label {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.form-card-tab {
+  font-size: 18px;
+}
+
+/* ---- FORM ITSELF ---- */
+.contact-form {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--grey-700);
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--blue-dark);
+  background: var(--grey-100);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  resize: vertical;
+  transition: border-color .2s, background .2s, box-shadow .2s;
+  outline: none;
+  cursor: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--blue-bright);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--grey-400);
+}
+
+/* Submit button full width */
+.form-submit {
+  width: 100%;
+  justify-content: center;
+  font-size: 14px;
+  padding: 16px;
+}
+
+/* Success message */
+.form-success {
+  text-align: center;
+  padding: 16px;
+  background: #F0FDF4;
+  border: 1px solid #86EFAC;
+  border-radius: 8px;
+  color: #166534;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+  .contact-hero {
+    grid-template-columns: 1fr;
+    padding: 48px 24px;
+    gap: 40px;
+    min-height: unset;
+  }
+
+  .contact-form-card {
+    transform: none;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
