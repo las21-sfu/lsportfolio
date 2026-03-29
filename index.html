@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
-    <!-- Custom cursor elements -->
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
 
@@ -37,192 +36,155 @@
     <main class="page">
       <!-- ---- HERO ---- -->
       <section class="hero">
-        <!-- Animated grid background -->
+        <!-- dot grid background -->
         <div class="hero-grid" aria-hidden="true"></div>
 
-        <!-- Floating label -->
-        <div class="hero-label reveal stagger-child">
-          <span class="chip">✦ Open for opportunities</span>
-        </div>
+        <!-- LEFT COLUMN -->
+        <div class="hero-left">
+          <div class="status-pill reveal stagger-child">
+            <span class="status-dot"></span>
+            Open for opportunities
+          </div>
 
-        <!-- Headline -->
-        <div class="hero-text reveal stagger-child">
-          <h1 class="hero-heading">
-            <span class="line-1">From the desk of</span>
-            <span class="line-2">Laraine<em> Sim</em></span>
+          <p class="hero-eyebrow reveal stagger-child">From the desk of —</p>
+
+          <h1 class="hero-name reveal stagger-child">
+            Laraine<br /><em>Sim.</em>
           </h1>
-          <p class="hero-sub">
-            UI/UX · Product Designer · Lover of Typography<br />
-            <span class="hero-trekkie"> and a proud Trekkie 🖖</span>
+
+          <p class="hero-role reveal stagger-child">
+            <strong>UI/UX Designer</strong> &amp; Product Designer
           </p>
-        </div>
 
-        <!-- 3D FOLDER DESK SCENE -->
-        <div class="desk-scene" aria-label="Interactive file folders">
-          <div class="desk-surface"></div>
+          <p class="hero-bio reveal stagger-child">
+            I design and build digital experiences that are clear, and
+            intentional, I'm currently studying at the School of Interactive
+            Arts and Technology at SFU, where design meets research.
+            <br /><br />
+            Proud Trekkie 🖖 &amp; lover of typography.
+          </p>
 
-          <!-- Folder: Projects -->
-          <div
-            class="folder-3d"
-            id="folder-projects"
-            data-href="projects.html"
-            tabindex="0"
-            role="button"
-            aria-label="Open Projects"
-          >
-            <div class="folder-tab">Projects</div>
-            <div class="folder-body">
-              <div class="folder-content">
-                <span class="folder-icon">📁</span>
-                <span class="folder-title">Projects</span>
-                <span class="folder-count">2 items</span>
-              </div>
-            </div>
-            <div class="folder-papers">
-              <div class="paper p1"></div>
-              <div class="paper p2"></div>
-            </div>
+          <div class="hero-cta-row reveal stagger-child">
+            <a href="projects.html" class="btn btn-primary">View Projects →</a>
+            <a
+              href="https://drive.google.com/file/d/1U10L0qeT0MrT_OG-5EShGJ4zShYl49rG/view"
+              target="_blank"
+              class="btn btn-yellow"
+              >Resume ↗</a
+            >
           </div>
 
-          <!-- Folder: About -->
-          <div
-            class="folder-3d"
-            id="folder-about"
-            data-href="about.html"
-            tabindex="0"
-            role="button"
-            aria-label="Open About"
-          >
-            <div class="folder-tab">About Me</div>
-            <div class="folder-body">
-              <div class="folder-content">
-                <span class="folder-icon">👤</span>
-                <span class="folder-title">About</span>
-                <span class="folder-count">Bio + Skills</span>
-              </div>
-            </div>
-            <div class="folder-papers">
-              <div class="paper p1"></div>
-              <div class="paper p2"></div>
-            </div>
+          <div class="hero-meta reveal">
+            <div class="scroll-line"></div>
+            Vancouver, BC &nbsp;·&nbsp; <span id="hero-clock">--:--</span>
           </div>
-
-          <!-- Folder: Contact -->
-          <div
-            class="folder-3d"
-            id="folder-contact"
-            data-href="contact.html"
-            tabindex="0"
-            role="button"
-            aria-label="Open Contact"
-          >
-            <div class="folder-tab">Contact</div>
-            <div class="folder-body">
-              <div class="folder-content">
-                <span class="folder-icon">✉️</span>
-                <span class="folder-title">Contact</span>
-                <span class="folder-count">Get in touch</span>
-              </div>
-            </div>
-            <div class="folder-papers">
-              <div class="paper p1"></div>
-            </div>
-          </div>
-
-          <!-- Sticky note -->
-          <div class="sticky-note reveal">
-            <span>Click a folder<br />to explore! →</span>
-          </div>
-
-          <!-- Desk item: pencil -->
-          <div class="desk-pencil" aria-hidden="true"></div>
         </div>
 
-        <!-- Scroll hint -->
-        <div class="scroll-hint reveal">
-          <span>Scroll</span>
-          <div class="scroll-line"></div>
-        </div>
-      </section>
+        <!-- RIGHT COLUMN — project cards -->
+        <div class="hero-right">
+          <p class="hero-right-label reveal">Selected work</p>
 
-      <!-- ---- FEATURED PROJECTS ---- -->
-      <section class="section projects-preview">
-        <div class="projects-header reveal">
-          <span class="section-label">Selected Work</span>
-          <h2 class="section-title">Projects I'm <em>proud of</em></h2>
-        </div>
-
-        <div class="project-grid stagger-group">
-          <!-- Project card 1 -->
-          <a href="iat235.html" class="project-card stagger-child reveal">
-            <div class="project-card-img">
+          <!-- Card 1: IAT235 Issue Reporting Platform -->
+          <a href="iat235.html" class="hero-project-card reveal stagger-child">
+            <div class="hpc-img">
+              <!--
+                REAL IMAGE — update this src if your path differs.
+                If the image fails to load, the striped placeholder shows automatically.
+              -->
               <img
                 src="/Reporting/IntroScreen.png"
-                alt="Description of the image"
+                alt="Issue Reporting Platform screenshot"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
               />
-              <div class="project-card-overlay">
-                <span class="project-card-cta">View Case Study →</span>
-              </div>
-            </div>
-            <div class="project-card-info">
-              <div class="project-card-tags">
-                <span class="tag">UX Design</span>
-                <span class="tag">Web Dev</span>
-                <span class="tag">Research</span>
-                <!-- Featured badge -->
-                <span class="chip" style="font-size: 10px; padding: 3px 8px"
-                  >✦ SIAT Showcase</span
+              <div class="hpc-img-placeholder" style="display: none">
+                <span class="hpc-placeholder-icon">🗂</span>
+                <span class="hpc-placeholder-hint">Add image</span>
+                <code class="hpc-placeholder-path"
+                  >/Reporting/IntroScreen.png</code
                 >
               </div>
-              <h3 class="project-card-title">Issue Reporting Platform</h3>
-              <p class="project-card-desc">
-                A community-driven issue platform for SIAT students — designed &
-                developed over 5 weeks.
-              </p>
-              <div class="project-card-meta">
-                <span>5 weeks · 2025</span>
-                <span class="project-card-arrow">→</span>
+              <div class="hpc-img-overlay">
+                <span class="hpc-num">01</span>
               </div>
+            </div>
+            <div class="hpc-info">
+              <div class="hpc-tags">
+                <span class="tag">UX Design</span>
+                <span class="tag">Web Dev</span>
+                <span class="chip hpc-chip">✦ SIAT Showcase</span>
+              </div>
+              <h3 class="hpc-title">Issue Reporting Platform</h3>
+              <p class="hpc-desc">
+                Community-driven reporting for SIAT students — 5 weeks, 2025
+              </p>
+              <span class="hpc-arrow">→</span>
             </div>
           </a>
 
-          <!-- Project card 2 -->
-          <a href="iat100.html" class="project-card stagger-child reveal">
-            <div class="project-card-img">
+          <!-- Card 2: IAT100 Kinetic Typography -->
+          <a href="iat100.html" class="hero-project-card reveal stagger-child">
+            <div class="hpc-img">
+              <!--
+                REAL IMAGE — the GIF from your existing index.html.
+                Falls back to placeholder automatically if path not found.
+              -->
               <img
                 src="/indeximages/typographyvid.gif"
-                alt="An animated example"
+                alt="Kinetic Typography video preview"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
               />
-              <div class="project-card-overlay">
-                <span class="project-card-cta">View Case Study →</span>
+              <div class="hpc-img-placeholder" style="display: none">
+                <span class="hpc-placeholder-icon">🎬</span>
+                <span class="hpc-placeholder-hint">Add GIF</span>
+                <code class="hpc-placeholder-path"
+                  >/indeximages/typographyvid.gif</code
+                >
+              </div>
+              <div class="hpc-img-overlay">
+                <span class="hpc-num">02</span>
               </div>
             </div>
-            <div class="project-card-info">
-              <div class="project-card-tags">
+            <div class="hpc-info">
+              <div class="hpc-tags">
                 <span class="tag">Motion Design</span>
                 <span class="tag">After Effects</span>
-                <span class="tag">Storyboarding</span>
               </div>
-              <h3 class="project-card-title">Kinetic Typography Video</h3>
-              <p class="project-card-desc">
-                Translating audio emotion into synchronized motion-typography
-                visuals.
+              <h3 class="hpc-title">Kinetic Typography Video</h3>
+              <p class="hpc-desc">
+                Audio-synced motion typography — 4 weeks, 2023
               </p>
-              <div class="project-card-meta">
-                <span>4 weeks · 2023</span>
-                <span class="project-card-arrow">→</span>
-              </div>
+              <span class="hpc-arrow">→</span>
             </div>
           </a>
-        </div>
 
-        <div class="projects-footer reveal">
-          <a href="projects.html" class="btn btn-outline">All Projects</a>
+          <!-- Card 3: Coming soon placeholder -->
+          <div
+            class="hero-project-card hpc-soon reveal stagger-child"
+            aria-hidden="true"
+          >
+            <div class="hpc-img">
+              <div class="hpc-img-placeholder">
+                <span
+                  class="hpc-placeholder-icon"
+                  style="font-size: 20px; opacity: 0.3"
+                  >＋</span
+                >
+                <span class="hpc-placeholder-hint">Coming soon</span>
+              </div>
+            </div>
+            <div class="hpc-info">
+              <div class="hpc-tags"><span class="tag">In progress</span></div>
+              <h3 class="hpc-title" style="color: var(--grey-400)">
+                Next project
+              </h3>
+              <p class="hpc-desc">Something new is in the works —</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <!-- ---- FOOTER---- -->
+    <!-- ---- FOOTER ---- -->
     <footer class="footer">
       <div class="footer-logo-group">
         <div class="footer-logo">LS<span>.</span></div>
@@ -242,7 +204,6 @@
             >Resume ↗</a
           >
         </nav>
-        <!-- Social icon links — update hrefs with your actual profiles -->
         <div class="footer-socials">
           <!-- LinkedIn -->
           <a
@@ -254,10 +215,9 @@
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-              ></path>
+              />
             </svg>
           </a>
-
           <!-- GitHub -->
           <a
             href="https://github.com/larainesim"
@@ -268,10 +228,9 @@
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-              ></path>
+              />
             </svg>
           </a>
-
           <!-- Email -->
           <a
             href="mailto:laraineannsim@gmail.com"
@@ -281,7 +240,7 @@
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
-              ></path>
+              />
             </svg>
           </a>
         </div>

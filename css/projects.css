@@ -41,31 +41,47 @@
   border-top: 1px solid var(--border);
 }
 
+/*
+  The row uses a 5-column grid:
+    [num] [info] [meta] [-----preview-----]
+  The preview column starts at 0 width and expands on hover.
+  overflow: hidden clips the preview as it grows in.
+*/
 .project-row {
   display: grid;
-  grid-template-columns: 48px 1fr auto;
-  gap: 24px;
-  align-items: start;
-  padding: 36px 0;
+  grid-template-columns: 48px 1fr auto 0px;
+  gap: 0;
+  align-items: stretch;
   border-bottom: 1px solid var(--border);
-  transition: background 0.2s;
+  position: relative;
+  overflow: hidden; /* clips the preview panel */
+  transition: grid-template-columns 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    background 0.2s;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .project-row:hover {
+  grid-template-columns: 48px 1fr auto 380px;
   background: var(--grey-100);
-  padding-left: 16px;
-  margin-left: -16px;
-  padding-right: 16px;
 }
 
+/* Give inner cells padding so they don't need it on the row itself */
 .project-row-num {
   font-family: var(--font-display);
   font-size: 11px;
   font-weight: 700;
   color: var(--grey-200);
   letter-spacing: 0.1em;
-  padding-top: 4px;
+  padding: 36px 0 36px 0;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 38px;
+  width: 48px;
+}
+
+.project-row-info {
+  padding: 36px 24px 36px 16px;
 }
 
 .project-row-title {
@@ -111,7 +127,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: center;
   gap: 8px;
+  padding: 36px 24px;
+  white-space: nowrap;
 }
 
 .project-row-year {
@@ -121,12 +140,106 @@
   color: var(--grey-400);
 }
 
+/* ============================================================
+   INLINE PREVIEW PANEL — expands inside the row on hover
+   ============================================================ */
+
+.project-row-preview {
+  /* Fills the 4th grid column, which animates from 0 → 380px */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* Slight fade-in delayed to let the width animate first */
+  opacity: 0;
+  transition: opacity 0.3s ease 0.1s;
+}
+
+.project-row:hover .project-row-preview {
+  opacity: 1;
+}
+
+/* The inner div is the actual visible panel.
+   It's always 380px wide so it can slide in as the column opens. */
+.project-row-preview-inner {
+  position: absolute;
+  inset: 0;
+  width: 380px;
+  background: var(--blue-mid); /* overridden per-row by JS */
+  overflow: hidden;
+  border-left: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Dot-grid texture overlay */
+.project-row-preview-inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle,
+    rgba(37, 99, 235, 0.22) 1px,
+    transparent 1px
+  );
+  background-size: 18px 18px;
+  z-index: 0;
+}
+
+/* Placeholder label centered in the panel */
+.project-row-preview-inner::after {
+  content: "[ preview ]";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+/* When a real <img> is injected by JS, hide the pseudo placeholder text */
+.project-row-preview-inner img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 2;
+}
+
+/* Yellow corner accent on the preview panel */
+.project-row-preview-inner .preview-corner {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.project-row-preview-inner .preview-corner::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--yellow);
+}
+
 /* =============================================
-   CASE STUDY SHARED STYLES (used by iat235.css
-   and iat100.css but defined here for reuse)
+   CASE STUDY SHARED STYLES
    ============================================= */
 
-/* Case study hero */
 .case-hero {
   background: var(--blue-dark);
   padding: 72px 48px 56px;
@@ -193,7 +306,6 @@
   margin-bottom: 40px;
 }
 
-/* Project meta grid */
 .case-meta {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -225,14 +337,12 @@
   color: var(--white);
 }
 
-/* Case study body */
 .case-body {
   max-width: 900px;
   margin: 0 auto;
   padding: 80px 48px;
 }
 
-/* Section marker */
 .case-section-marker {
   display: inline-flex;
   align-items: center;
@@ -285,14 +395,12 @@
   margin-bottom: 20px;
 }
 
-/* Divider */
 .case-divider {
   border: none;
   border-top: 1px solid var(--border);
   margin: 56px 0;
 }
 
-/* Highlight block (callout) */
 .callout {
   background: var(--blue-light);
   border-left: 4px solid var(--blue-bright);
@@ -312,7 +420,6 @@
   color: var(--blue-bright);
 }
 
-/* Image container in case study */
 .case-img {
   width: 100%;
   border-radius: 12px;
@@ -327,7 +434,6 @@
   display: block;
 }
 
-/* Caption */
 .case-caption {
   font-size: 12px;
   color: var(--grey-400);
@@ -336,7 +442,6 @@
   margin-top: 8px;
 }
 
-/* Reflection bullets */
 .reflection-list li {
   padding: 12px 0;
   border-bottom: 1px solid var(--border);
@@ -355,7 +460,6 @@
   margin-top: 2px;
 }
 
-/* Project nav (prev/next) */
 .project-nav {
   display: flex;
   justify-content: space-between;
@@ -384,15 +488,22 @@
   color: var(--blue-bright);
 }
 
+/* Image placeholder (used in case studies) */
+.img-placeholder {
+  background: var(--grey-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--grey-400);
+  letter-spacing: 0.06em;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
 /* ---- RESPONSIVE ---- */
 @media (max-width: 768px) {
-  .folders-row {
-    padding: 32px 24px;
-    gap: 20px;
-  }
-  .folder-lg {
-    width: 160px;
-  }
   .case-hero {
     padding: 48px 24px 40px;
   }
@@ -402,10 +513,21 @@
   .case-body {
     padding: 48px 24px;
   }
+
   .project-row {
-    grid-template-columns: 32px 1fr;
+    grid-template-columns: 32px 1fr !important;
+    transition: background 0.2s;
   }
-  .project-row-meta {
+  /* Hide meta and preview on mobile */
+  .project-row-meta,
+  .project-row-preview {
     display: none;
+  }
+
+  .project-row-info {
+    padding: 28px 16px;
+  }
+  .project-row-num {
+    padding: 30px 0 28px;
   }
 }

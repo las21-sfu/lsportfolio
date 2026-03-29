@@ -34,97 +34,62 @@
     <main class="page">
       <!-- ============ CASE HERO ============ -->
       <section class="case-hero">
-        <div class="case-hero-inner">
-          <a href="projects.html" class="case-hero-back">← All Projects</a>
+        <div class="case-hero-inner case-hero-inner--with-image">
+          <!-- Left column: all text content -->
+          <div class="hero-text-col">
+            <a href="projects.html" class="case-hero-back">← All Projects</a>
 
-          <div class="reveal">
-            <!-- Featured badge — emphasizes the data point -->
-            <div style="margin-bottom: 16px">
-              <span class="chip">✦ Featured: SIAT Spring 2025 Showcase</span>
+            <div class="reveal">
+              <!-- Featured badge — emphasizes the data point -->
+              <div style="margin-bottom: 16px">
+                <span class="chip">✦ Featured: SIAT Spring 2025 Showcase</span>
+              </div>
+              <h1 class="case-hero-title">
+                Issue Reporting<br /><em>Platform</em>
+              </h1>
+              <p class="case-hero-desc">
+                A community-driven issue-reporting platform designed and
+                developed for SIAT students — promoting transparent,
+                student-faculty communication.
+              </p>
             </div>
-            <h1 class="case-hero-title">
-              Issue Reporting<br /><em>Platform</em>
-            </h1>
-            <p class="case-hero-desc">
-              A community-driven issue-reporting platform designed and developed
-              for SIAT students — promoting transparent, student-faculty
-              communication.
-            </p>
-          </div>
 
-          <!-- Project meta — key data points emphasized -->
-          <div class="case-meta reveal">
-            <div class="case-meta-item">
-              <div class="case-meta-label">Role</div>
-              <div class="case-meta-value">UX · Web · Mobile · Research</div>
-            </div>
-            <div class="case-meta-item">
-              <div class="case-meta-label">Team</div>
-              <div class="case-meta-value">Sim · Paolucci · Canete</div>
-            </div>
-            <div class="case-meta-item">
-              <div class="case-meta-label">Duration</div>
-              <!-- Data point: 5 weeks -->
-              <div class="case-meta-value" style="color: var(--yellow)">
-                5 Weeks
+            <!-- Project meta — key data points emphasized -->
+            <div class="case-meta reveal">
+              <div class="case-meta-item">
+                <div class="case-meta-label">Role</div>
+                <div class="case-meta-value">UX · Web · Mobile · Research</div>
+              </div>
+              <div class="case-meta-item">
+                <div class="case-meta-label">Team</div>
+                <div class="case-meta-value">Sim · Paolucci · Canete</div>
+              </div>
+              <div class="case-meta-item">
+                <div class="case-meta-label">Duration</div>
+                <!-- Data point: 5 weeks -->
+                <div class="case-meta-value" style="color: var(--yellow)">
+                  5 Weeks
+                </div>
+              </div>
+              <div class="case-meta-item">
+                <div class="case-meta-label">Skills</div>
+                <div class="case-meta-value">Figma · HTML · CSS</div>
               </div>
             </div>
-            <div class="case-meta-item">
-              <div class="case-meta-label">Skills</div>
-              <div class="case-meta-value">Figma · HTML · CSS</div>
+
+            <!-- Showcase link — important output -->
+            <div style="margin-top: 28px" class="reveal">
+              <a
+                href="https://www.sfu.ca/siat/showcase/spring-2025-project-showcase/iat-235-issue-reporting-platform-for-siat-students.html"
+                target="_blank"
+                class="btn btn-yellow"
+              >
+                View SIAT Showcase Entry ↗
+              </a>
             </div>
           </div>
-
-          <!-- Showcase link — important output -->
-          <div style="margin-top: 28px" class="reveal">
-            <a
-              href="https://www.sfu.ca/siat/showcase/spring-2025-project-showcase/iat-235-issue-reporting-platform-for-siat-students.html"
-              target="_blank"
-              class="btn btn-yellow"
-            >
-              View SIAT Showcase Entry ↗
-            </a>
-          </div>
-        </div>
+          <!-- end .hero-text-col -->
       </section>
-
-      <!-- ============ DATA CALLOUT ============ -->
-      <!-- Emphasize the key data/output numbers prominently -->
-      <section
-        class="section"
-        style="background: var(--grey-100); padding: 40px 48px"
-      >
-        <div style="max-width: 900px; margin: 0 auto">
-          <div class="stat-row reveal stagger-group">
-            <div class="stat-card stagger-child">
-              <div class="stat-num">5</div>
-              <div class="stat-label">Weeks to design &amp; build</div>
-            </div>
-            <div
-              class="stat-card stagger-child"
-              style="background: var(--blue-mid)"
-            >
-              <div class="stat-num">3</div>
-              <div class="stat-label">Designers &amp; developers</div>
-            </div>
-            <div
-              class="stat-card stagger-child"
-              style="background: var(--blue-bright)"
-            >
-              <div class="stat-num">2</div>
-              <div class="stat-label">Platforms: web &amp; mobile</div>
-            </div>
-            <div
-              class="stat-card stagger-child"
-              style="background: var(--grey-700)"
-            >
-              <div class="stat-num">1×</div>
-              <div class="stat-label">Showcase featured</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- ============ CASE BODY ============ -->
       <article class="case-body">
         <!-- SUMMARY -->
@@ -230,9 +195,11 @@
 
         <!-- Placeholder for Reddit analysis image -->
         <div class="case-img reveal">
-          <div class="img-placeholder" style="height: 300px">
-            <!-- Replace with: <img src="images/iat235-reddit-post.png" alt="Analysis of Reddit Single Post"> -->
-            Analysis of Single Post — image placeholder
+          <div class="img-placeholder" style="height: 600px">
+            <img
+              src="/Reporting/singlepost.png"
+              alt="Analysis of Reddit Single Post"
+            />
           </div>
         </div>
         <p class="case-caption">Analysis of Reddit single post structure</p>
@@ -248,9 +215,11 @@
 
         <!-- Placeholder for profile analysis image -->
         <div class="case-img reveal">
-          <div class="img-placeholder" style="height: 220px">
-            <!-- Replace with: <img src="images/iat235-user-profile.png" alt="Analysis of User Profile"> -->
-            User Profile Analysis — image placeholder
+          <div class="img-placeholder" style="height: 430px">
+            <img
+              src="/Reporting/userprofile.png"
+              alt="Analysis of User Profile"
+            />
           </div>
         </div>
         <p class="case-caption">Analysis of user profile patterns</p>
@@ -266,9 +235,11 @@
         </p>
 
         <div class="case-img reveal">
-          <div class="img-placeholder" style="height: 360px">
-            <!-- Replace with: <img src="images/iat235-user-story.png" alt="Mapped User Story"> -->
-            Mapped User Story — image placeholder
+          <div class="img-placeholder" style="height: 800px">
+            <img
+              src="/Reporting/mappeduserstory.png"
+              alt="Analysis of User Profile"
+            />
           </div>
         </div>
         <p class="case-caption">Full user journey map</p>
@@ -283,9 +254,8 @@
         </p>
 
         <div class="case-img reveal">
-          <div class="img-placeholder" style="height: 300px">
-            <!-- Replace with: <img src="images/iat235-info-structure.png" alt="Information Structure"> -->
-            Interactive Information Structure — image placeholder
+          <div class="img-placeholder" style="height: 600px">
+            <img src="/Reporting/flow.png" alt="Analysis of User Profile" />
           </div>
         </div>
 
@@ -304,64 +274,12 @@
         </div>
 
         <div class="case-img reveal">
-          <div class="img-placeholder" style="height: 380px">
-            <!-- Replace with: <img src="images/iat235-design-system.png" alt="Design System"> -->
-            Design System — image placeholder
+          <div class="img-placeholder" style="height: 590px">
+            <img src="/Reporting/designsystem.png" alt="Analysis of User Profile" />
+          </div>
           </div>
         </div>
         <p class="case-caption">Figma-based design system components</p>
-
-        <hr class="case-divider" />
-
-        <!-- 03: DESIGNS & IDEATION -->
-        <div class="reveal">
-          <span class="case-section-marker" data-num="03">Ideation</span>
-          <h2 class="case-h2">Webpage Designs &amp; Iterations</h2>
-          <p class="case-p">
-            This phase focused on exploring layout ideas and refining page
-            designs for key areas of the platform. I participated in early
-            ideation and design refinement, with an emphasis on clear visual
-            hierarchy, accessibility, and user-friendly interactions.
-          </p>
-        </div>
-
-        <!-- Image gallery grid for iteration screenshots -->
-        <div
-          style="
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin: 24px 0;
-          "
-          class="reveal"
-        >
-          <!-- Replace these placeholders with actual iteration screenshots -->
-          <div
-            class="img-placeholder"
-            style="height: 200px; border-radius: 8px"
-          >
-            Iteration 1
-          </div>
-          <div
-            class="img-placeholder"
-            style="height: 200px; border-radius: 8px"
-          >
-            Iteration 2
-          </div>
-          <div
-            class="img-placeholder"
-            style="height: 200px; border-radius: 8px"
-          >
-            Iteration 3
-          </div>
-          <div
-            class="img-placeholder"
-            style="height: 200px; border-radius: 8px"
-          >
-            Iteration 4
-          </div>
-        </div>
-        <p class="case-caption">Selected wireframe and design iterations</p>
 
         <hr class="case-divider" />
 
@@ -377,9 +295,8 @@
           visual hierarchy, accessibility, and guiding users toward key actions.
         </p>
         <div class="case-img reveal">
-          <div class="img-placeholder" style="height: 320px">
-            <!-- Replace with: <img src="images/iat235-landing.png" alt="Landing Page Design"> -->
-            Landing Page Design — image placeholder
+          <div class="img-placeholder" style="height: 460px">
+            <img src="Reporting/landingpage.png" alt="Landing Page Design">
           </div>
         </div>
 
@@ -390,9 +307,8 @@
           grouping of content.
         </p>
         <div class="case-img reveal">
-          <div class="img-placeholder" style="height: 320px">
-            <!-- Replace with: <img src="images/iat235-faq.png" alt="FAQ Page Design"> -->
-            FAQ Page Design — image placeholder
+          <div class="img-placeholder" style="height: 460px">
+            <img src="/Reporting/faqpaeg.png" alt="FAQ Page Design">
           </div>
         </div>
 
@@ -403,9 +319,8 @@
           implementation within the system.
         </p>
         <div class="case-img reveal">
-          <div class="img-placeholder" style="height: 360px">
-            <!-- Replace with: <img src="images/iat235-profile.png" alt="Profile Page Design"> -->
-            Profile Page Design — image placeholder
+          <div class="img-placeholder" style="height: 500px">
+            <img src="/Reporting/profilepage.png" alt="Profile Page Design">
           </div>
         </div>
 
