@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "Reporting"
+		},
+		{
+			"path": "aboutimages"
+		},
+		{
+			"path": "indeximages"
+		},
+		{
+			"path": "Video"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "lsportfolio"
+	}
+}
